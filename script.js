@@ -28,8 +28,11 @@ var main = function() {
   $('form').submit(function() {
     var text = $('#todo').val();
     var html = template(text);
-    $('.list').append(html);
-    $('#todo').val("");
+    if (text !=== "") {
+      $('.list').append(html);
+      $('#todo').val("");
+    }
+
     return false;
   });
 
