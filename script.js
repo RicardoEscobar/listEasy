@@ -32,7 +32,6 @@ var main = function() {
       $('.list').append(html);
       $('#todo').val("");
     }
-
     return false;
   });
 
