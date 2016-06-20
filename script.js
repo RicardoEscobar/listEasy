@@ -34,7 +34,9 @@ var main = function() {
     }
     return false;
   });
-
+  $(document).on("click", '.glyphicon-star', function() {
+    $(this).toggleClass('active');
+  });
 };
 
 $(document).ready(main);
