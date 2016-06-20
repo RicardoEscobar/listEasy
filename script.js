@@ -28,7 +28,7 @@ var main = function() {
   $('form').submit(function() {
     var text = $('#todo').val();
     var html = template(text);
-    if (text !=== "") {
+    if (text !== "") {
       $('.list').append(html);
       $('#todo').val("");
     }
